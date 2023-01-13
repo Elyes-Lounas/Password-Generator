@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+
+ * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  align-content: center;
+  height: 100vh;
+  background-color: #341059;
+}
+
+ul li {
+  list-style: none;
+  line-height: 1.4;
+  color: #fff;
+  font-size: .8rem;
+  font-weight: 400;
+}
+
+.container .title {
+  position: absolute;
+  top: 3rem;
+  left: 50%;
+  font-size: 1.5rem;
+  transform: translateX(-50%);
+  font-family: "Seymour One" , Sans-Serif;
+  color: #fff000;
+  
+}
+
+.pw_card {
+  width: 300px;
+  background-color: #55108a;
+  margin-left: auto;
+  margin-right: auto;
+  padding: .5rem; 
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+}
+
+
+.pw_card .pw_info #Password_length {
+  width: 50px;
+  caret-color: #55108a;
+  height: 20px;
+  outline: none;
+}
+
+::placeholder {
+  opacity: 1;
+  transition: .6s;
+}
+
+.pw_card .pw_info input::placeholder {
+  text-align: center;
+}
+
+.pw_card .pw_info input:focus::placeholder {
+  opacity: 0;
+}
+
+.generatebtn {
+  width: 100%;
+  padding: .4rem 0;
+  margin-top: 1rem;
+  letter-spacing: 1px;
+  background-color: #fff000;
+  border-radius: 3px;
+  border: none;
+  font-size: 1rem;
+}
+
+.generatebtn:active {
+  background-color: #b1a705;
+}
+
+media(min-width:979px) {
+ .pw_card {
+   width: 550px;
+ }
+.container .title {
+  position: absolute;
+  top: 10rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 4rem;
+ }
+ ul li {
+  font-size: 1rem;
+ }
+}
+.pw_card .password {
+  background-color: #9358c1dc;
+  border-radius: 3px;
+  padding: .5rem;
+  color: #fff;
+  height: 40px;
+  font-size: 14px;
+}
+
+.pw_card .pw_info {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
